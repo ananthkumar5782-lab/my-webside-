@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Registration Details Form</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <header class="masthead">
+      <div class="company">TRANZMAX CORPORATE NETWORK PRIVATE LID</div>
+      <h1 class="form-title">Registration details form</h1>
+    </header>
+
+    <form class="form" autocomplete="off">
+      <section class="section">
+        <h2 class="section-title">Personal Information</h2>
+
+        <div class="row">
+          <label for="fullname">Full Name</label>
+          <input id="fullname" name="fullname" type="text" placeholder="" />
+        </div>
+
+        <div class="row">
+          <label for="age">Age</label>
+          <input id="age" name="age" type="text" placeholder="" />
+        </div>
+
+        <div class="row">
+          <label for="dob">Birth of Date</label>
+          <input id="dob" name="dob" type="date" />
+        </div>
+
+        <div class="row">
+          <label for="address">Full Address</label>
+          <textarea id="address" name="address" rows="2" placeholder=""></textarea>
+        </div>
+
+        <div class="row">
+          <label for="qualification">Qualification</label>
+          <input id="qualification" name="qualification" type="text" placeholder="" />
+        </div>
+
+        <div class="row">
+          <label for="city">City/Country</label>
+          <input id="city" name="city" type="text" placeholder="" />
+        </div>
+
+        <div class="row">
+          <label for="gender">Gender</label>
+          <select id="gender" name="gender">
+            <option value="">(Male/Female)</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="row">
+          <label for="whatsapp">Whatsapp number</label>
+          <input id="whatsapp" name="whatsapp" type="tel" placeholder="" />
+        </div>
+
+        <div class="row">
+          <label for="phone">Phone Number</label>
+          <input id="phone" name="phone" type="tel" placeholder="" />
+        </div>
+
+      </section>
+
+      <hr class="divider" />
+
+      <section class="section membership">
+        <h3 class="section-subtitle">Type Of Membership</h3>
+        <p class="muted">*Choose your type of membership</p>
+
+        <div class="membership-options">
+          <label class="checkbox">
+            <input type="checkbox" name="membership" value="part-time"> <span>part time</span>
+          </label>
+
+          <label class="checkbox">
+            <input type="checkbox" name="membership" value="full-time"> <span>full time</span>
+          </label>
+        </div>
+      </section>
+
+      <hr class="divider" />
+
+      <section class="section address-block">
+        <h3>Address:</h3>
+        <div class="address-lines">
+          <div>Agbar road  Melmarumathur, </div>
+          <div></div>
+          <div>Vandavasi-604408</div>
+          <div>Tiruvannamalai   -(DTS). </div>
+          <div></div>
+        </div>
+      </section>
+
+    </form>
+
+  </main>
+</body>
+</html>

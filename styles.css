@@ -1,0 +1,87 @@
+/* styles.css - Registration form replica */
+:root{
+  --accent:#7a2f2f; /* maroon */
+  --accent-dark:#3c2b3a; /* deep */
+  --muted:#777;
+  --field-bg:#f2f2f2;
+  --page-max:800px;
+}
+
+*{box-sizing:border-box}
+body{
+  font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  margin:24px;
+  background:#fff;
+  color:#222;
+}
+
+.page{
+  max-width:var(--page-max);
+  margin:0 auto;
+  padding:24px 28px;
+}
+
+.masthead{
+  background:linear-gradient(90deg,var(--accent) 0%, #6b3540 50%, #4a4d7c 100%);
+  color:#fff;
+  padding:18px 22px;
+  border-radius:6px 6px 0 0;
+  text-align:center;
+}
+.company{
+  font-weight:700;
+  letter-spacing:1px;
+  font-size:14px;
+  opacity:0.95;
+}
+.form-title{
+  font-weight:600;
+  margin:12px 0 0 0;
+  font-size:28px;
+}
+
+.form{
+  border:1px solid #eee;
+  border-top:none;
+  padding:20px;
+}
+
+.section-title{font-size:16px;color:#8a4b4b;margin:8px 0 14px 0;font-weight:600}
+.section-subtitle{font-size:15px;color:#8a4b4b;margin:4px 0}
+.muted{color:var(--muted);font-size:13px;margin-top:6px}
+
+.row{display:grid;grid-template-columns:200px 1fr;gap:12px;align-items:center;margin:10px 0}
+.row label{font-size:14px;color:#333;position:relative;padding-right:6px}
+.row label::after{content:":";position:relative;left:6px;color:#444}
+.row input[type=text], .row input[type=tel], .row input[type=date], .row select, .row textarea{
+  width:100%;padding:11px 14px;border-radius:3px;border:0;background:var(--field-bg);font-size:14px;height:40px;
+}
+.row textarea{resize:vertical;padding-top:10px;padding-bottom:10px}
+
+/* remove earlier two-col usage; rows now stack consistently */
+
+.divider{border:none;border-top:1px solid #ddd;margin:18px 0}
+
+.membership-options{display:flex;gap:48px;align-items:center;margin-top:10px;margin-left:200px}
+.checkbox{display:flex;align-items:center;gap:8px;font-size:15px}
+.checkbox input{width:16px;height:16px}
+
+.address-block h3{margin:0 0 8px 0}
+.address-lines div{font-weight:700;font-size:18px;line-height:1.1}
+
+/* Responsive */
+@media (max-width:760px){
+  .row{grid-template-columns:1fr;}
+  .masthead{text-align:center}
+  .form{padding:14px}
+}
+
+/* Print-friendly */
+@media print{
+  body{margin:0}
+  .page{max-width:210mm;padding:8mm}
+  .masthead{border-radius:0}
+  .form{border:0;padding:0}
+  .company{font-size:12px}
+  .form-title{font-size:22px}
+}
