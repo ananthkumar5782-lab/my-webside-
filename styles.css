@@ -69,6 +69,10 @@ body{
 .address-block h3{margin:0 0 8px 0}
 .address-lines div{font-weight:700;font-size:18px;line-height:1.1}
 
+.button-group{margin-top:24px;text-align:center}
+.btn-submit{background:var(--accent);color:#fff;border:none;padding:12px 32px;border-radius:4px;font-size:15px;font-weight:600;cursor:pointer}
+.btn-submit:hover{background:#6b3540;opacity:0.9}
+
 /* Responsive */
 @media (max-width:760px){
   .row{grid-template-columns:1fr;}
